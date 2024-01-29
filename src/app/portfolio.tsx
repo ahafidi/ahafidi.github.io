@@ -12,7 +12,7 @@ export default function Portfolio() {
           <div className="space-y-24">
             <div className="flex space-x-6">
               <h1 className="text-3xl font-normal text-gray-700 dark:text-gray-200 md:text-4xl">01</h1>
-              <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
+              <span className="w-28 min-w-10 h-0.5 bg-gray-300 mt-5"></span>
               <div>
                 <h1 className="mb-5 text-3xl font-normal text-gray-700 dark:text-gray-200 md:text-4xl">
                   <a className="relative w-fit inline after:block after:content-[''] after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="https://ahafidi.github.io/">ahafidi.github.io</a>
@@ -24,29 +24,29 @@ export default function Portfolio() {
             </div>
             <div className="flex space-x-6">
               <h1 className="text-3xl font-normal text-gray-700 dark:text-gray-200 md:text-4xl">02</h1>
-              <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
+              <span className="w-28 min-w-10 h-0.5 bg-gray-300 mt-5"></span>
               <div>
                 <h1 className="mb-5 text-3xl font-normal text-gray-700 dark:text-gray-200 md:text-4xl">
                   ■■■■■.ai
                 </h1>
-                <p className="text-sm font-normal text-gray-600 dark:text-gray-300 md:text-base">(Not yet available) Generator of city images using AI.</p>
+                <p className="text-sm font-normal text-gray-600 dark:text-gray-300 md:text-base">Generator of city images using AI.</p>
               </div>
             </div>
             <div className="flex space-x-6">
               <h1 className="text-3xl font-normal text-gray-700 dark:text-gray-200 md:text-4xl">03</h1>
-              <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
+              <span className="w-28 min-w-10 h-0.5 bg-gray-300 mt-5"></span>
               <div>
                 <h1 className="mb-5 text-3xl font-normal text-gray-700 dark:text-gray-200 md:text-4xl">
                   ■■■■■■.so
                 </h1>
                 <p className="text-sm font-normal text-gray-600 dark:text-gray-300 md:text-base">
-                  (Not yet available) A twitter-inspired web platform developed using Next.js and Supabase.
+                  A twitter-inspired web platform developed using Next.js and Supabase.
                 </p>
               </div>
             </div>
             <div className="flex space-x-6">
               <h1 className="text-3xl font-normal text-gray-700 dark:text-gray-200 md:text-4xl">04</h1>
-              <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
+              <span className="w-28 min-w-10 h-0.5 bg-gray-300 mt-5"></span>
               <div>
                 <h1 className="mb-5 text-3xl font-normal text-gray-700 dark:text-gray-200 md:text-4xl">
                   <a className="relative w-fit inline after:block after:content-[''] after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left" href="https://www.engieimpact.com/ellipse">Ellipse</a> – Zero Platform Carbon

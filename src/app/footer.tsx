@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="flex justify-center py-10">
       <div className="container px-5 py-20 mx-auto">
-        <div className="flex flex-col items-start mx-auto lg:w-2/3 sm:flex-row sm:items-center">
+        <div className="flex flex-col items-center mx-auto lg:w-2/3 sm:flex-row">
           <h1 className="flex-grow text-2xl font-medium text-black sm:pr-16 title-font dark:text-white">
             I&apos;m not currently taking on new client work but feel free to contact me for any other inquiries.
           </h1>
