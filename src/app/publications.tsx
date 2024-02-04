@@ -21,7 +21,7 @@ export default async function Publications() {
                 <a
                   key={slug}
                   href={`publications/${slug}`}
-                  className="relative w-fit inline after:block after:content-[''] after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                  className="capitalize relative w-fit inline after:block after:content-[''] after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                 >
                   -&gt; {title}
                 </a>))
