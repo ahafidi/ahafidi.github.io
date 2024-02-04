@@ -15,3 +15,9 @@
 .dark {
   @apply bg-gray-900;
 }
+
+.prose {
+  & {
+    @apply max-w-full !important
+  }
+}

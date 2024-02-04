@@ -1,6 +1,17 @@
-"use client";
+"use client"
 
-export default function Header({ toggleDarkMode }: { toggleDarkMode: () => void }) {
+import React from "react"
+
+export default function Header() {
+  const [darkMode, setDarkMode] = React.useState(false)
+
+  React.useEffect(() => {
+    if (darkMode)
+      document.documentElement.classList.add('dark')
+    else
+      document.documentElement.classList.remove('dark')
+  }, [darkMode])
+
   return (
     <header className="container max-w-screen-xl px-5 py-5 mx-auto mb-40">
       <nav className="flex justify-between">
@@ -33,7 +44,7 @@ export default function Header({ toggleDarkMode }: { toggleDarkMode: () => void 
           <div className="group/contrast">
             <button
               className="inline-block p-1 transition duration-100 ease-linear rounded-md group-hover/contrast:bg-black dark:bg-gray-900 dark:group-hover/contrast:bg-white"
-              onClick={toggleDarkMode}
+              onClick={() => setDarkMode(mode => !mode)}
             >
               <img className="w-8 m-2 transition duration-100 ease-linear group-hover/contrast:invert dark:invert dark:group-hover/contrast:invert-0" src="assets/contrast.svg" alt="Contrast" title="Contrast" />
             </button>
@@ -41,6 +52,6 @@ export default function Header({ toggleDarkMode }: { toggleDarkMode: () => void 
 
         </div>
       </nav>
-    </header>
+    </header >
   )
 }
