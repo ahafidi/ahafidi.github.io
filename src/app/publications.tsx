@@ -1,7 +1,7 @@
 import type { Publications } from "@/app/api/route"
 
 export async function getPublications() {
-  const data = await fetch(`${process.env.URL}/api`, { method: 'GET', cache: 'force-cache' })
+  const data = await fetch(`/api`, { method: 'GET', cache: 'force-cache' })
   return await data.json() as Promise<Publications>
 }
 
