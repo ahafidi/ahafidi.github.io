@@ -1,7 +1,7 @@
 import type { Publications } from "@/app/api/route"
 
 export async function getPublications() {
-  const data = await fetch(`/api`, { method: 'GET', cache: 'force-cache' })
+  const data = await fetch(`${process.env.URL}/api`, { method: 'GET' })
   return await data.json() as Promise<Publications>
 }
 
@@ -20,7 +20,7 @@ export default async function Publications() {
               publications.map(({ slug, title }) => (
                 <a
                   key={slug}
-                  href={`publications/${slug}`}
+                  href={`/publications/${slug}`}
                   className="capitalize relative w-fit inline after:block after:content-[''] after:absolute after:h-[3px] after:bg-black dark:after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                 >
                   -&gt; {title}
@@ -29,6 +29,6 @@ export default async function Publications() {
           </p>
         </div>
       </div>
-    </section >
+    </section>
   )
 }

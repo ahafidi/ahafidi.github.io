@@ -6,6 +6,7 @@ import { Remarkable } from 'remarkable'
 import { linkify } from 'remarkable/linkify'
 
 import 'katex/dist/katex.min.css'
+import path from 'path'
 
 const md = new Remarkable({
   html: false, // do not remove!
@@ -45,7 +46,7 @@ md.inline.ruler.enable([
 ])
 
 export async function generateStaticParams() {
-  const files = await fs.readdir('public/posts')
+  const files = await fs.readdir(path.join(process.cwd(), 'public/posts'))
 
   return files.map((fileName) => ({
     slug: fileName.replaceAll(' ', '-').replace('.md', '').toLowerCase(),
@@ -54,7 +55,10 @@ export async function generateStaticParams() {
 
 async function getData(slug: string) {
   const fileName = slug.replaceAll('-', ' ') + '.md'
-  const readFile = await fs.readFile(`public/posts/${fileName}`, 'utf-8')
+  const readFile = await fs.readFile(
+    path.join(process.cwd(), `public/posts/${fileName}`),
+    'utf-8'
+  )
   return { data: readFile }
 }
 

@@ -1,4 +1,5 @@
 import fs from 'fs/promises'
+import path from 'path'
 
 export type Publication = {
   slug: string
@@ -8,7 +9,7 @@ export type Publication = {
 export type Publications = Publication[]
 
 export async function GET() {
-  const files = await fs.readdir('public/posts')
+  const files = await fs.readdir(path.join(process.cwd(), 'public/posts'))
 
   const publications: Publications = files.map((fileName) => ({
     slug: fileName.replaceAll(' ', '-').replace('.md', '').toLowerCase(),
