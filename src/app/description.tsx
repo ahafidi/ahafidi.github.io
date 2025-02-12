@@ -102,6 +102,14 @@ export default function Description() {
           className="inline-block w-20 h-20 grayscale hover:grayscale-0"
           width={80}
           height={80}
+          src="/assets/python.svg"
+          alt="Python"
+          title="Python"
+        />
+        <Image
+          className="inline-block w-20 h-20 grayscale hover:grayscale-0"
+          width={80}
+          height={80}
           src="/assets/pytorch.svg"
           alt="PyTorch"
           title="PyTorch"
