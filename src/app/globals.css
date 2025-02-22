@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500&family=Reem+Kufi:wght@400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.arabic {
+  font-family: "Reem Kufi", sans-serif;
+}
+
+:root {
+  @apply bg-white;
+}
+
+.dark {
+  @apply bg-gray-900;
+}
